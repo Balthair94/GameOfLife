@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Game of the life</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<header id="header">
+		<div class="container">
+			<h1 class="text-center text-uppercase">Game of Life</h1>
+			<h3 class="text-right">Baltazar Rodriguez Ramirez</h3>
+		</div>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 text-right">
+				<button onclick="stopPlayLife()" class="btn btn-success" id="id_button_play">Play/Stop Game</button>
+			</div>
+			<div class="col-md-6 text-left">
+				<button onclick="addRandomCells()" class="btn btn-primary">Random life</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 text-right">
+				<h4><strong>Generation:</strong></h4>
+			</div>
+			<div class="col-md-6 text-left">
+				<h4 id="id_generation">1</h4>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/gameoflife.js"></script>
+</body>
+</html>
